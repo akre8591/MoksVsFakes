@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UserViewModelTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-04-05T20:42:59" hostname="VF9KQ229J6" time="0.003">
+  <properties/>
+  <testcase name="getAllUserInfoNameIsNull" classname="UserViewModelTest" time="0.002"/>
+  <testcase name="getAllUserInfoIsNull" classname="UserViewModelTest" time="0.0"/>
+  <testcase name="getAllUserInfoAgeIsNull" classname="UserViewModelTest" time="0.0"/>
+  <testcase name="getAllUserInfo" classname="UserViewModelTest" time="0.0"/>
+  <testcase name="getAllUserInfoLastNameIsNull" classname="UserViewModelTest" time="0.0"/>
+  <testcase name="getAllUserInfoGenreIsNull" classname="UserViewModelTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
