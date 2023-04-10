@@ -9,6 +9,6 @@ data class User(
 }
 
 enum class Gender(val pronoun: String) {
-    Female("she"),
-    Male("he")
+    Female("She/Her"),
+    Male("He/Him")
 }

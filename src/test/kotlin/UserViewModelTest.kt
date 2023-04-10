@@ -15,7 +15,7 @@ class UserViewModelTest {
 
     @Test
     fun getAllUserInfo() {
-        val expectedResult = "Id: 1230\n" + "Name: Diego\n" + "Last Name: Casas\n" + "Gender: Male\n" + "Age: 32"
+        val expectedResult = "Id: 1230\n" + "Name: Diego\n" + "Last Name: Casas\n" + "Gender: Male\n" + "Pronoun: He/Him\n" + "Age: 32"
 
         fakeRepository.user = User(1230, "Diego", "Casas",32, Gender.Male)
 

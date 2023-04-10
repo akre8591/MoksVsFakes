@@ -10,6 +10,7 @@ class UserViewModel(
                     append("Name: ${user.name}\n")
                     append("Last Name: ${user.lastName}\n")
                     append("Gender: ${user.gender}\n")
+                    append("Pronoun: ${user.gender?.pronoun}\n")
                     append("Age: ${user.age}")
                 }
             }

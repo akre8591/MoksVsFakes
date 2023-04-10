@@ -16,7 +16,7 @@ class UserViewModelTestMocks {
 
     @Test
     fun getAllUserInfo() {
-        val expectedResult = "Id: 1230\n" + "Name: Diego\n" + "Last Name: Casas\n" + "Gender: Male\n" + "Age: 32"
+        val expectedResult = "Id: 1230\n" + "Name: Diego\n" + "Last Name: Casas\n" + "Gender: Male\n" + "Pronoun: He/Him\n" + "Age: 32"
 
         every {
             repository.getUserInformation(1230)
