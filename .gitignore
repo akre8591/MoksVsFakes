@@ -1,0 +1,15 @@
+*.bin
+*.lock
+*.probe
+*.class
+*.tab
+*.keystream
+*.at
+*.tab_i
+*.len
+*.txt
+*.idx
+*.xml
+.idea/.name
+*.html
+*.jar
