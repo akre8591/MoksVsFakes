@@ -13,3 +13,11 @@
 .idea/.name
 *.html
 *.jar
+*.bin
+*.lock
+.gradle/7.4.2/fileHashes/fileHashes.bin
+*.probe
+.gradle/file-system.probe
+build/reports/tests/test/packages/default-package.html
+build/reports/tests/test/index.html
+.idea/misc.xml
