@@ -1,3 +1,5 @@
+import Constants.INCOMPLETE_INFORMATION_ERROR
+import Constants.NO_RESULTS_ERROR
 import junit.framework.TestCase.assertEquals
 import org.junit.Before
 import org.junit.Test
@@ -28,7 +30,7 @@ class UserViewModelTest {
     fun getAllUserInfoIsNull() {
         fakeRepository.user = null
 
-        val expectedResult = "No results"
+        val expectedResult = NO_RESULTS_ERROR
 
         val actual = userViewModel.getAllUserInformation(1230)
 
@@ -39,7 +41,7 @@ class UserViewModelTest {
     fun getAllUserInfoNameIsNull() {
         fakeRepository.user = User(1230, null, "Casas",32, Gender.Male)
 
-        val expectedResult = "Error: Incomplete Information"
+        val expectedResult = INCOMPLETE_INFORMATION_ERROR
 
         val actual = userViewModel.getAllUserInformation(1230)
 
@@ -50,7 +52,7 @@ class UserViewModelTest {
     fun getAllUserInfoLastNameIsNull() {
         fakeRepository.user = User(1230, "Diego", null,32, Gender.Male)
 
-        val expectedResult = "Error: Incomplete Information"
+        val expectedResult = INCOMPLETE_INFORMATION_ERROR
 
         val actual = userViewModel.getAllUserInformation(1230)
 
@@ -61,7 +63,7 @@ class UserViewModelTest {
     fun getAllUserInfoAgeIsNull() {
         fakeRepository.user = User(1230, "Diego", "Casas",null, Gender.Male)
 
-        val expectedResult = "Error: Incomplete Information"
+        val expectedResult = INCOMPLETE_INFORMATION_ERROR
 
         val actual = userViewModel.getAllUserInformation(1230)
 
@@ -72,7 +74,7 @@ class UserViewModelTest {
     fun getAllUserInfoGenreIsNull() {
         fakeRepository.user = User(1230, "Diego", "Casas",32, null)
 
-        val expectedResult = "Error: Incomplete Information"
+        val expectedResult = INCOMPLETE_INFORMATION_ERROR
 
         val actual = userViewModel.getAllUserInformation(1230)
 

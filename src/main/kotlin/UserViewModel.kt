@@ -1,3 +1,6 @@
+import Constants.INCOMPLETE_INFORMATION_ERROR
+import Constants.NO_RESULTS_ERROR
+
 class UserViewModel(
     private val repository: UserRepository,
 ) {
@@ -14,9 +17,9 @@ class UserViewModel(
                     append("Age: ${user.age}")
                 }
             }
-            "Error: Incomplete Information"
+            INCOMPLETE_INFORMATION_ERROR
         } ?: run {
-            "No results"
+            NO_RESULTS_ERROR
         }
     }
 

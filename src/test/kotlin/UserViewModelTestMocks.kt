@@ -1,3 +1,5 @@
+import Constants.INCOMPLETE_INFORMATION_ERROR
+import Constants.NO_RESULTS_ERROR
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Before
@@ -29,7 +31,7 @@ class UserViewModelTestMocks {
 
     @Test
     fun getAllUserInfoIsNull() {
-        val expectedResult = "No results"
+        val expectedResult = NO_RESULTS_ERROR
 
         every {
             repository.getUserInformation(1230)
@@ -42,7 +44,7 @@ class UserViewModelTestMocks {
 
     @Test
     fun getAllUserInfoNameIsNull() {
-        val expectedResult = "Error: Incomplete Information"
+        val expectedResult = INCOMPLETE_INFORMATION_ERROR
 
         every {
             repository.getUserInformation(1230)
@@ -55,7 +57,7 @@ class UserViewModelTestMocks {
 
     @Test
     fun getAllUserInfoLastNameIsNull() {
-        val expectedResult = "Error: Incomplete Information"
+        val expectedResult = INCOMPLETE_INFORMATION_ERROR
 
         every {
             repository.getUserInformation(1230)
@@ -68,7 +70,7 @@ class UserViewModelTestMocks {
 
     @Test
     fun getAllUserInfoAgeIsNull() {
-        val expectedResult = "Error: Incomplete Information"
+        val expectedResult = INCOMPLETE_INFORMATION_ERROR
 
         every {
             repository.getUserInformation(1230)
@@ -81,7 +83,7 @@ class UserViewModelTestMocks {
 
     @Test
     fun getAllUserInfoGenreIsNull() {
-        val expectedResult = "Error: Incomplete Information"
+        val expectedResult = INCOMPLETE_INFORMATION_ERROR
 
         every {
             repository.getUserInformation(1230)
