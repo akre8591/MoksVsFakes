@@ -4,7 +4,7 @@ lateinit var userViewModel: UserViewModel
 
 fun main(args: Array<String>) {
 
-    api = UserApi()
+    api = UserApiImpl()
     repository = UserRepositoryImp(api)
     userViewModel = UserViewModel(repository)
 
